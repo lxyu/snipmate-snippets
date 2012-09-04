@@ -1,5 +1,8 @@
+snippet #
+	# -*- coding: utf-8 -*-
 snippet #!
 	#!/usr/bin/env python
+	# -*- coding: utf-8 -*-
 snippet imp
 	import ${1:module}
 snippet from
@@ -106,7 +109,7 @@ snippet try Try/Except/Else/Finally
 	finally:
 		${6:pass}
 # if __name__ == '__main__':
-snippet ifmain
+snippet ifm
 	if __name__ == '__main__':
 		${1:main()}
 # __magic__
@@ -123,7 +126,7 @@ snippet pdbbb
 	import pdbpp; pdbpp.set_trace()
 snippet pprint
 	import pprint; pprint.pprint(${1})${2}
-snippet "
+snippet ""
 	"""
 	${1:doc}
 	"""
@@ -134,7 +137,7 @@ snippet test
 # test case
 snippet testcase
 	class ${1:ExampleCase}(unittest.TestCase):
-		
+
 		def test_${2:description}(self):
 			${3:pass}
 snippet fut
